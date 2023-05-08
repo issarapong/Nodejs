@@ -1,6 +1,8 @@
 const os = require('os')
+console.log('utils run..') 
 
-function random() {
+
+module.exports = function random() {
     return Math.floor(Math.random()*100)
 }
 function sysInfo(){
@@ -13,5 +15,3 @@ function sysInfo(){
 
 const title ="Codecamp14"
 
-module.exports ={ random, sysInfo, camp : title}
-//module.exports ={ random, sysInfo, title}
