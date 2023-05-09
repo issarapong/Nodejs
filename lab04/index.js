@@ -49,8 +49,18 @@ const fsa = require ('fs/promises')
 // //------------Asyncrous promise--------
 // console.log("--------------Async promise-----------------")
 
-// console.time('readPM')
-// fsa.readFile('./file01.txt','utf8').then( data => console.log(data))
+// // console.time('readPM')
+//  fsa.readFile('./file01.txat','utf8')  //------------
+//  .then( data => console.log(data))   //    ----นิยมใข้สุด
+//  .catch( err=> console.log(err.message))  ///----------
+
+
+ // รหือย่อ
+ fsa.readFile('./file01.txat','utf8') 
+ .then(console.log)
+ .then( data => console.log(data))
+
+
 // fsa.readFile('./file02.txt','utf8').then( data => console.log(data))
 // fsa.readFile('./file03.txt','utf8').then( data => console.log(data))
 // console.timeEnd('readPM')
